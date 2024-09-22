@@ -1,0 +1,64 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#map,
+body,
+html {
+  height: 100%;
+}
+
+.info {
+  padding: 6px 8px;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: white;
+  background: rgba(255, 255, 255, 0.949);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.info h4 {
+  margin: 0 0 5px;
+  color: #777;
+}
+
+.legend {
+  line-height: 18px;
+  color: #555;
+  transition: opacity 0.3s ease-in-out; /* Added smooth transition */
+}
+
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.8;
+}
+
+/* Optional: Styling for different layers control */
+.leaflet-control-layers {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.leaflet-control-layers-toggle {
+  border: none;
+  background-color: #333;
+  color: white;
+  font-size: 12px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 600px) {
+  #map {
+    height: 80%;
+  }
+
+  .info.legend {
+    font-size: 12px;
+    padding: 5px;
+  }
+}
